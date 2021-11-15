@@ -6,6 +6,7 @@
   position: relative;
   z-index: 1;
   border-left: 1.5rem solid #ffffff;
+  border-bottom: 1.5rem solid #ffffff;
 }
 .header::after {
   position: absolute;
@@ -156,7 +157,8 @@
   padding-right: 15rem;
 }
 .banner .banner-content {
-  flex-basis: 45%;
+  flex-basis: 100%;
+  max-width: 45%;
   margin-top: 19.3rem;
   margin-bottom: 24.9rem;
   color: #ffffff;
@@ -186,12 +188,17 @@
 .banner .banner-content button.btn-01 {
   margin-right: 1.5rem;
 }
+.banner .banner-content button:hover {
+  color: #ffffff;
+  background: #7e1603;
+}
 .banner .coffee {
-  flex-basis: 52%;
+  flex-basis: 100%;
+  max-width: 52%;
 }
 
 .banner .scroll-bar {
-  flex-basis: 3%;
+  /* flex-basis: 3%; */
   margin-top: 19.3rem;
   margin-bottom: 24.9rem;
 }
@@ -219,4 +226,188 @@
   left: -3px;
   font-size: 1.7rem;
   color: #ffffff;
+}
+
+/* ABOUT PART STYLES  */
+.about-section {
+  background: url(../images/about/about-bg.png) no-repeat center center;
+  background-size: cover;
+  border-right: 1.5rem solid #ffffff;
+  border-bottom: 1.5rem solid #ffffff;
+}
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 22rem;
+  padding-right: 16.5rem;
+  padding-bottom: 12.5rem;
+}
+/* .about-wrapper .about-left-column {
+  flex-basis: ;
+  max-width: ;
+} */
+.about-wrapper .about-right-column {
+  flex-basis: 100%;
+  max-width: 39.215%;
+}
+.about-wrapper .about-right-column p {
+  padding-bottom: 4rem;
+  color: #ffffff;
+}
+.about-wrapper .about-right-column .btn-03:hover {
+  color: #ffffff;
+  background: #7e1603;
+}
+
+/* SERVICES SECTION DESIGN  */
+.services-section {
+  position: relative;
+  border-left: 1.5rem solid #ffffff;
+  border-bottom: 1.5rem solid #ffffff;
+  background: #1f1d47;
+}
+.services-carosuel {
+  padding: 0px 200px;
+}
+.services-section .carousel-content-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.services-section .single-item {
+  flex-basis: 30%;
+}
+.services-section .single-item.item-02 {
+  flex-basis: 36%;
+}
+
+.services-section .single-item .item-img {
+  padding: 80px 60px;
+  background: #ffffff;
+}
+.services-section .single-item.item-02 .item-img {
+  padding: 80px 120px;
+  background: #db3620;
+}
+
+.services-section .single-item .item-content {
+  color: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 5.2rem;
+  text-align: center;
+}
+.services-section .single-item .item-content {
+  color: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 5.2rem;
+  text-align: center;
+}
+.services-section .single-item .item-content p {
+  padding-top: 3rem;
+}
+.services-section .btn-04:hover {
+  color: #ffffff;
+  background: #7e1603;
+}
+
+/* CONTACT SECTION STYLES  */
+.contact-section {
+  position: relative;
+  overflow: hidden;
+  border-right: 1.5rem solid #ffffff;
+  border-bottom: 1.5rem solid #ffffff;
+  background: #1e1d46;
+}
+.contact-wrapper {
+  padding: 0px 220px;
+  padding-bottom: 138px;
+}
+.contact-testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.contact-testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.contact-wrapper .contact-form {
+  flex-basis: 100%;
+  max-width: 41.271%;
+}
+
+.contact-wrapper .contact-form .section-title .heading {
+  padding-bottom: 5.3rem;
+}
+.contact-wrapper .testimonial-wrapper {
+  flex-basis: 100%;
+  max-width: 44.316%;
+}
+.contact-wrapper .testimonial-wrapper .section-title .heading {
+  padding-bottom: 6.3rem;
+}
+.contact-wrapper .contact-form form {
+  width: 100%;
+}
+.contact-wrapper .contact-form form input {
+  width: 100%;
+  padding: 2.4rem;
+  margin-bottom: 3rem;
+  font-size: 1.7rem;
+}
+.contact-wrapper .contact-form form input::placeholder {
+  color: #626262;
+  text-transform: capitalize;
+}
+.contact-wrapper .contact-form form textarea {
+  width: 100%;
+  padding: 2.4rem;
+  font-size: 1.7rem;
+  margin-bottom: 4.5rem;
+}
+.contact-wrapper .contact-form form textarea::placeholder {
+  color: #626262;
+  text-transform: capitalize;
+}
+.contact-wrapper .contact-form form button {
+  display: block;
+  margin: 0 auto;
+}
+.contact-wrapper .contact-form form button:hover {
+  color: #ffffff;
+  background: #7e1603;
+}
+.contact-wrapper .feedback-slide {
+  position: relative;
+}
+.contact-wrapper .feedback {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+}
+.contact-wrapper .client {
+  position: absolute;
+  bottom: 90px;
+  z-index: 2;
+}
+.contact-wrapper .client::before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -30px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #db3721;
+}
+.contact-wrapper .feedback p {
+  padding: 11.1rem 4rem 20rem 4.5rem;
+  color: #1f1e1e;
+  font-size: 1.7rem;
 }
