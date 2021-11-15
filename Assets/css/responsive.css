@@ -1,0 +1,22 @@
+@media (max-width: 1367.99px) {
+  .header::after {
+    width: calc(100% - 68%);
+  }
+  .logo img {
+    width: 65%;
+    height: auto;
+  }
+  .search-bar {
+    margin-right: 50px;
+  }
+  .banner {
+    padding-left: 20rem;
+    padding-right: 10rem;
+  }
+  .banner .coffee {
+    width: 100%;
+  }
+  .banner .coffee img {
+    width: 100%;
+  }
+}
