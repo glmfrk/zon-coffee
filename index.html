@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css" />
     <!-- <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" /> -->
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/slick-theme.css" />
 
     <link rel="stylesheet" href="./assets/css/basic.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -138,41 +140,37 @@
           </div>
         </div>
         <div class="services-carosuel">
-          <div class="owl-carousel carousel-box">
-            <div class="item">
-              <div class="carousel-content-box">
-                <div class="single-item item-01">
-                  <div class="item-img">
-                    <img src="./assets/images/services/1.png" alt="coffee" />
-                  </div>
-                  <div class="item-content">
-                    <h4>Red Coffee</h4>
-                    <p>Many desktop publishing packages and web page editors</p>
-                  </div>
-                </div>
-                <div class="single-item item-02">
-                  <div class="item-img">
-                    <img src="./assets/images/services/1.png" alt="coffee" />
-                  </div>
-                  <div class="item-content">
-                    <h4>Red Coffee</h4>
-                    <p>Many desktop publishing packages and web page editors</p>
-                  </div>
-                </div>
-                <div class="single-item item-03">
-                  <div class="item-img">
-                    <img src="./assets/images/services/1.png" alt="coffee" />
-                  </div>
-                  <div class="item-content">
-                    <h4>Red Coffee</h4>
-                    <p>Many desktop publishing packages and web page editors</p>
-                  </div>
-                </div>
+          <div class="owl-carousel carousel-content-box">
+            <div class="single-item item-01">
+              <div class="item-img">
+                <img src="./assets/images/services/1.png" alt="coffee" />
+              </div>
+              <div class="item-content">
+                <h4>Red Coffee</h4>
+                <p>Many desktop publishing packages and web page editors</p>
               </div>
             </div>
-            <button class="btn button btn-04">book now table</button>
+            <div class="single-item item-02">
+              <div class="item-img">
+                <img src="./assets/images/services/1.png" alt="coffee" />
+              </div>
+              <div class="item-content">
+                <h4>Red Coffee</h4>
+                <p>Many desktop publishing packages and web page editors</p>
+              </div>
+            </div>
+            <div class="single-item item-03">
+              <div class="item-img">
+                <img src="./assets/images/services/1.png" alt="coffee" />
+              </div>
+              <div class="item-content">
+                <h4>Red Coffee</h4>
+                <p>Many desktop publishing packages and web page editors</p>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="btn button btn-04">book now table</button>
       </div>
     </section>
 
@@ -228,29 +226,32 @@
                         believable. If you are going to
                       </p>
                     </div>
-                    <div class="client">
-                      <img
-                        src="./assets/images/testimonal/client.png"
-                        alt="client"
-                      />
-                    </div>
-                    <div class="coffee-01">
-                      <img
-                        src="./assets/images/testimonal/coffee.png"
-                        alt="coffee"
-                      />
+                    <div class="client-info">
+                      <div class="client">
+                        <img
+                          src="./assets/images/testimonal/client.png"
+                          alt="client"
+                        />
+                      </div>
+                      <div class="client-bio">
+                        <h4>Mark Jonson</h4>
+                        <h6>customre</h6>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="coffee-01">
+              <img src="./assets/images/testimonal/coffee.png" alt="coffee" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="footert-section">
-      <div class="footer-part">
+    <footer class="footert-section">
+      <section class="footer-top-part">
         <div class="container">
           <div class="row">
             <div class="footer-logo">
@@ -258,19 +259,21 @@
             </div>
           </div>
           <div class="row">
-            <form action="#" class="subscribe">
-              <input
-                type="email"
-                name="email"
-                placeholder="enter your email"
-                required
-              />
-              <input type="submit" value="sebscribe" />
-            </form>
+            <div class="col-md-12">
+              <form action="#" class="subscribe">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="enter your email"
+                  required
+                />
+                <input class="submit" type="submit" value="sebscribe" />
+              </form>
+            </div>
           </div>
           <div class="row">
             <div class="col-md-2 offset-md-2">
-              <div class="footer-menu">
+              <div class="footer-content footer-menu">
                 <h4 class="headingh4">menu</h4>
                 <ul>
                   <li><a href="#">home</a></li>
@@ -283,7 +286,7 @@
               </div>
             </div>
             <div class="col-md-2 offset-md-2">
-              <div class="blog-post">
+              <div class="footer-content blog-post">
                 <h4 class="headingh4">coffee</h4>
                 <ul>
                   <li><a href="#">Black Coffee </a></li>
@@ -295,7 +298,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="contact-info">
+              <div class="footer-content contact-info">
                 <h4 class="headingh4">follow us</h4>
                 <ul class="social-link">
                   <li>
@@ -314,25 +317,35 @@
                     <a href="#"><i class="fab fa-youtube-square"></i></a>
                   </li>
                 </ul>
+                <div class="contact">
+                  <a href="#"><i class="fas fa-map-marker-alt"></i> location</a>
+                  <a href="#"
+                    ><i class="fas fa-phone-alt"></i> call +01 1234567890</a
+                  >
+                  <a class="email" href="#"
+                    ><i class="far fa-envelope-open"></i> demo@gmail.com</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- FOOTER SECTION  -->
-    <footer>
-      <p class="copyright">
-        &copy; 2021 All Rights Reserved. Free html Templates
-      </p>
+      </section>
+      <!-- FOOTER SECTION  -->
+      <section class="footer-bottom-part">
+        <p class="copyright">
+          &copy; 2021 All Rights Reserved. Free html Templates
+        </p>
+      </section>
     </footer>
 
     <!-- js files -->
-    <script src="./assets/js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/jquery.fancybox.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

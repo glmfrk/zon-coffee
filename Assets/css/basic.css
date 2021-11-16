@@ -76,11 +76,14 @@ button.btn {
 }
 .social-link {
   display: flex;
-  justify-content: space-evenly;
+}
+.social-link li {
+  margin-right: 30px;
+}
+.social-link li:last-child {
+  margin-right: 0px;
 }
 .social-link a {
-  padding: 20px;
-  background: rgb(98, 0, 255);
   color: #ffffff;
 }
 

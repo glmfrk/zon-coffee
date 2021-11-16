@@ -33,6 +33,10 @@
   .services-wrapper {
     box-sizing: border-box;
     padding: 0px 100px;
+    padding-bottom: 125px;
+  }
+  .services-carosuel {
+    padding: 0px;
   }
   .services-section .single-item .item-img {
     padding: 40px 30px;
@@ -50,5 +54,9 @@
   .contact-wrapper {
     padding: 0px 120px;
     padding-bottom: 138px;
+  }
+  .coffee-01 {
+    margin: 20px auto;
+    margin-left: 320px;
   }
 }
